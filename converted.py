@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 import google.generativeai as palm
-import pprint
 
 app = Flask(__name__)
 
@@ -26,4 +25,4 @@ def generate_text():
     return jsonify(response)
 
 if __name__ == '__main__':
-    app.run(host="192.168.1.8", port=5000)
+    app.run(host="0.0.0.0", port=5000)
