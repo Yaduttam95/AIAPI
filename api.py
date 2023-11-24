@@ -26,4 +26,4 @@ def generate_text():
     return jsonify(response)
 
 if __name__ == '__main__':
-    app.run(host="192.168.1.8", port=5000)
+    app.run(host="0.0.0.0")
